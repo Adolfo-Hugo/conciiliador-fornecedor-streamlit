@@ -1,7 +1,0 @@
-re
-pandas
-numpy
-streamlit
-altair
-openpyxl
-requirements
