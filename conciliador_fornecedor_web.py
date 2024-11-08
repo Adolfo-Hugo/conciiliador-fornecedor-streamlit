@@ -12,7 +12,10 @@ def extrair_numero_nf_cte(texto):
         return correspondencias.group(2)
     else:
         correspondencias_numero = re.search(r'\b\d+\b', texto)
-        return correspondencias_numero.group() if correspondencias_numero else None
+    if corrrespondencias:
+        return correspondencias_numero.group()
+    else 
+        return None
 
 # Interface do Streamlit
 st.title("Conciliação de Notas Fiscais")
